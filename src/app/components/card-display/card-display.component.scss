@@ -1,0 +1,56 @@
+.card-display {
+    height: auto;
+    break-inside: avoid;   
+    padding: 5px; 
+}
+
+.card-container {
+    align-items: center;
+    margin: auto;
+    columns: 280px;
+    column-gap: 0rem;
+    font: normal 1em / 1.5em sans-serif;
+    column-count: 4;
+}
+
+.inner-card {
+    background-color: #f5abab;
+    border-radius: 10px 100px/10px;
+    box-shadow: 5px 5px 5px lightgrey;
+    padding: 20px;
+    word-break: break-word;
+}
+
+.card-close-btn:hover {
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
+.card-close-btn {
+    margin-top: -1.5rem;
+    float: right;
+    background: transparent;
+    margin-right: -30px;
+    border: none;
+    width: 30px;
+}
+
+
+
+@media only screen and (max-width: 50em) {
+    .card-container {
+        column-count: 3;
+    }
+}
+    
+@media only screen and (max-width: 30em){
+    .card-container {
+        column-count: 2;
+    }
+}
+
+@media only screen and (max-width: 20em){
+    .card-container {
+        column-count: 1;
+    }
+}
